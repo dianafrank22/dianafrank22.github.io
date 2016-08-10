@@ -14,11 +14,17 @@ img.logo{
 	width: 70%;
 }
 
+img.logo:hover{
+	cursor: pointer;
+}
+
+
 .front{
 	margin-top: 15%;
 	margin-left: 15%;
 	margin-right: auto;
 }
+
 
 .back{
 	margin-top: 17%;
@@ -31,6 +37,10 @@ img.logo{
 	width: 65%;
 	margin: 30px;
 	border: white solid 2px;
+}
+
+.contact:hover{
+	cursor: pointer;
 }
 
 h3, h4{
