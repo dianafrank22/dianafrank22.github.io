@@ -46,11 +46,11 @@ img.logo:hover{
 h3, h4{
 	color: white;
 	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
 }
 
 .contact-title{
 	margin-top: 3%;
-	font-weight: bold;
 }
 
 .contact-logo{
