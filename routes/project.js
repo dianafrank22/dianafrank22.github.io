@@ -1,5 +1,5 @@
 const router        = require('express').Router();
-const {getProjects} = require('../apis/projects');
+const {getProjects} = require('../apis/project');
 
 router.get('/', getProjects,(req,res)=>{
 	res.json({projects: res.projects})
