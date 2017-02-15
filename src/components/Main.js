@@ -6,6 +6,7 @@ import Notfound from './NotFound'
 import Contact from './Contact'
 import Experience from './Experience'
 import Nav from './Nav'
+import Footer from './Footer'
 
 
 export default class Main extends React.Component{
@@ -33,4 +34,5 @@ export default class Main extends React.Component{
 	<div>
 		<Nav/>
 		{props.children}
+		<Footer/>
 	</div>
