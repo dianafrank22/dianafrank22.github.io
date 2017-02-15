@@ -9,7 +9,10 @@ export default class Contact extends React.Component{
   
 	render(){
 		return(
+			<div>
 			<h3> Contact </h3>
+			email, cell, linkedin, twitter, github, bitbucket
+			</div>
 		)
 	}
 

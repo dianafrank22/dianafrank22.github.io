@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "661acc65021ca82a29e3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "ff37b540f53acb8f22e2"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -27933,6 +27933,7 @@
 				return _react2.default.createElement(
 					'div',
 					{ className: 'projects' },
+					'// check out github',
 					_react2.default.createElement(_Projectcard2.default, { projects: this.state.projects })
 				);
 			}
@@ -28057,7 +28058,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+		value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -28079,29 +28080,51 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var About = function (_React$Component) {
-	  _inherits(About, _React$Component);
+		_inherits(About, _React$Component);
 	
-	  function About() {
-	    _classCallCheck(this, About);
+		function About() {
+			_classCallCheck(this, About);
 	
-	    var _this = _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this));
+			var _this = _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).call(this));
 	
-	    _this.state = {};
-	    return _this;
-	  }
+			_this.state = {};
+			return _this;
+		}
 	
-	  _createClass(About, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'h3',
-	        null,
-	        ' About '
-	      );
-	    }
-	  }]);
+		_createClass(About, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'about' },
+					_react2.default.createElement(
+						'h3',
+						null,
+						' About '
+					),
+					_react2.default.createElement(
+						'p',
+						null,
+						' about me'
+					),
+					'// image name, age, education, new york, new orleans',
+					_react2.default.createElement(
+						'p',
+						null,
+						' what i\'ve done '
+					),
+					'worked with react, node, express, see more of my work here, see more about my experiences here',
+					_react2.default.createElement(
+						'p',
+						null,
+						' when i\'m not coding '
+					),
+					'hanging with my dogs, traveling, enjoy making travel videos, reading a crime thriller, searching for the best moscow mule in manhattan,'
+				);
+			}
+		}]);
 	
-	  return About;
+		return About;
 	}(_react2.default.Component);
 	
 	exports.default = About;
@@ -28180,7 +28203,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+		value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -28202,29 +28225,34 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var Contact = function (_React$Component) {
-	  _inherits(Contact, _React$Component);
+		_inherits(Contact, _React$Component);
 	
-	  function Contact() {
-	    _classCallCheck(this, Contact);
+		function Contact() {
+			_classCallCheck(this, Contact);
 	
-	    var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this));
+			var _this = _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this));
 	
-	    _this.state = {};
-	    return _this;
-	  }
+			_this.state = {};
+			return _this;
+		}
 	
-	  _createClass(Contact, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'h3',
-	        null,
-	        ' Contact '
-	      );
-	    }
-	  }]);
+		_createClass(Contact, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'h3',
+						null,
+						' Contact '
+					),
+					'email, cell, linkedin, twitter, github, bitbucket'
+				);
+			}
+		}]);
 	
-	  return Contact;
+		return Contact;
 	}(_react2.default.Component);
 	
 	exports.default = Contact;
@@ -28239,7 +28267,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+		value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -28261,29 +28289,34 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var Experience = function (_React$Component) {
-	  _inherits(Experience, _React$Component);
+		_inherits(Experience, _React$Component);
 	
-	  function Experience() {
-	    _classCallCheck(this, Experience);
+		function Experience() {
+			_classCallCheck(this, Experience);
 	
-	    var _this = _possibleConstructorReturn(this, (Experience.__proto__ || Object.getPrototypeOf(Experience)).call(this));
+			var _this = _possibleConstructorReturn(this, (Experience.__proto__ || Object.getPrototypeOf(Experience)).call(this));
 	
-	    _this.state = {};
-	    return _this;
-	  }
+			_this.state = {};
+			return _this;
+		}
 	
-	  _createClass(Experience, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'h3',
-	        null,
-	        ' Experience '
-	      );
-	    }
-	  }]);
+		_createClass(Experience, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'experience' },
+					_react2.default.createElement(
+						'h3',
+						null,
+						' Experience '
+					),
+					'See projects here Work Skills Education'
+				);
+			}
+		}]);
 	
-	  return Experience;
+		return Experience;
 	}(_react2.default.Component);
 	
 	exports.default = Experience;

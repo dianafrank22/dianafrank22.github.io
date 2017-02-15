@@ -22,6 +22,7 @@ componentDidMount(){
 	render(){
 		return(
 			<div className="projects">
+			// check out github
 				<Projectcard projects= {this.state.projects} />
 			</div>
 		)

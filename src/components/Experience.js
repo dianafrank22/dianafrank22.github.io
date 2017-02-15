@@ -9,7 +9,13 @@ export default class Experience extends React.Component{
   
 	render(){
 		return(
+			<div className="experience">
 			<h3> Experience </h3>
+			See projects here 
+			Work
+			Skills 
+			Education
+			</div>
 		)
 	}
 
