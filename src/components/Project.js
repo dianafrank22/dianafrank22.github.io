@@ -1,24 +1,28 @@
 import React, { PropTypes, Component } from 'react';
+import Projectcard from './Projectcard'
 
-export default class Project extends React.component{
-	constructor(props){
+export default class Project extends React.Component{
+	constructor(){
 		super();
-		this.getProjects()
+		this.state={
+			projects: []
+		}
 	}
 
-	getProjects(){
-		fetch('/project').then(response => response.json()).then(result=>{
-			console.log(result)
+componentDidMount(){
+	fetch('/project').then(response => response.json()).then(result=>{
 			this.setState({
-				projects: result
+				projects: result.projects
 			})
 		})
-	}
+}
+
+
 
 	render(){
 		return(
 			<div className="projects">
-				<h3> Projects </h3>
+				<Projectcard projects= {this.state.projects} />
 			</div>
 		)
 	}

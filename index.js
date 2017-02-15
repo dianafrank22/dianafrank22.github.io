@@ -1,10 +1,15 @@
-const express       = require('express');
+require('dotenv').config();
+
 const logger        = require('morgan');
+const express       = require('express');
 const path          = require('path');
 const bodyParser    = require('body-parser');
-const home          = require('./routes/home');
-const projects      = require('./routes/project')
+const project       = require('./routes/project')
+const webpack       = require('webpack');
+const config        = require('./webpack.config');
+
 const app           = express();
+const compiler      = webpack(config);
 const port          = process.env.PORT || 3000;
 
 
@@ -12,8 +17,7 @@ const port          = process.env.PORT || 3000;
 // the requests on client side will 
 
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'icons')));
+app.use(express.static(path.join(__dirname, 'dist')))
 
 app.use(bodyParser.json());
 
@@ -23,5 +27,4 @@ app.listen(port, () =>{
 	console.log('Server running on port ', port)
 })
 
-app.use('/', home);
 app.use('/project', project)
