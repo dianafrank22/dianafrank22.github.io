@@ -20,7 +20,7 @@ export default class Main extends React.Component{
 			<Router history={hashHistory}>
 				<Route path='/' component={Container}>
 				<IndexRoute component={About}/>
-				<Route path='/projects' component={Project}/>
+				<Route path='/work' component={Project}/>
 				<Route path='/contact' component={Contact}/>
 				<Route path='/experience' component={Experience}/>
 				<Route path='*' component={Notfound}/>
@@ -31,7 +31,7 @@ export default class Main extends React.Component{
 
 }
 	const Container = (props) =>
-	<div>
+	<div className='main'>
 		<Nav/>
 		{props.children}
 		<Footer/>

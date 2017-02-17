@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import ReactDOM from 'react-dom';
 
+
 export default class Notfound extends React.Component{
   constructor(){
     super();
@@ -9,7 +10,9 @@ export default class Notfound extends React.Component{
   
 	render(){
 		return(
-			<h3> Not Found  <b> SAD!</b></h3>		)
+			<div class='no-style'>
+			<h3> Not Found  <b> SAD!</b></h3>	
+			</div>	)
 	}
 
 }

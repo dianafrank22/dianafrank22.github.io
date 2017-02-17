@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import Projectcard from './Projectcard'
 
+
 export default class Project extends React.Component{
 	constructor(){
 		super();
@@ -21,7 +22,7 @@ componentDidMount(){
 
 	render(){
 		return(
-			<div className="projects">
+			<div className='projects'>
 			// check out github
 				<Projectcard projects= {this.state.projects} />
 			</div>

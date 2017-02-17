@@ -1,6 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import ReactDOM from 'react-dom';
 
+
 export default class Projectcard extends React.Component{
   constructor(props){
     super(props);
@@ -25,7 +26,7 @@ export default class Projectcard extends React.Component{
 		eachProject.push(div)
 	}
 		return(
-		<div className="projectcard">
+		<div className='project-card'>
 		<h4> Projects</h4>
 		 	{eachProject}
 		</div>)

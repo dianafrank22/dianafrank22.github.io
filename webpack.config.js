@@ -16,7 +16,7 @@ module.exports = {
   },
   output: {
     path: OUTPUT_DIR,
-    filename: "/js/[name].js",
+    filename: "/[name].js",
   },
   watch: true,
   devtool: 'eval-source-map',
@@ -39,9 +39,14 @@ module.exports = {
       loaders: ['babel']
     },
     { test: /\html$/, loader: "file?name=[name].[ext]" },
+    {test: /\.css$/, loader: 'style-loader'},
     {
       test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+      loader: 'css-loader',
+      query:{
+        modules: true,
+        localIdentName: '[name]__[local]__[hash:base64:5]'
+      }
     }, 
     {
         test: /\.(svg|gif|png|jpg)$/,
