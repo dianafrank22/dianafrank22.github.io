@@ -1,3 +1,4 @@
+"use strict"
 const path              = require('path');
 const webpack           = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -9,11 +10,12 @@ const PUBLIC     = path.resolve(__dirname, 'public')
 
 
 module.exports = {
-  entry: {
-    javascript: `${INPUT_DIR}/app.js`,
-    html: `${INPUT_DIR}/index.html`,
-    css:  `${PUBLIC}/css/main.css`,
-  },
+
+  entry:{
+  javascript: `${INPUT_DIR}/app.js`,
+  html: `${INPUT_DIR}/index.html`,
+css: `${PUBLIC}/css/main.css`
+},
   output: {
     path: OUTPUT_DIR,
     filename: "/[name].js",
@@ -22,12 +24,12 @@ module.exports = {
   devtool: 'eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Personal Site',
+      title: 'Battleship',
       xhtml: true,
       template: require('html-webpack-template'),
-      appMountId: 'main-container'
+      appMountId: 'container'
     }),
-    new ExtractTextPlugin(`/css/[name].css`, {
+    new ExtractTextPlugin(`${PUBLIC}/css/main.css`, {
       allChunks: true
     }),
   ],
@@ -39,19 +41,10 @@ module.exports = {
       loaders: ['babel']
     },
     { test: /\html$/, loader: "file?name=[name].[ext]" },
-    {test: /\.css$/, loader: 'style-loader'},
     {
       test: /\.css$/,
-      loader: 'css-loader',
-      query:{
-        modules: true,
-        localIdentName: '[name]__[local]__[hash:base64:5]'
-      }
-    }, 
-    {
-        test: /\.(svg|gif|png|jpg)$/,
-        loader: 'file-loader?name=/img/[name].[hash:base64:5].[ext]'
-      },
+      loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
+    }
     ]
   }
 }

@@ -1,3 +1,19 @@
+.nav ul {
+  display: block;
+  width: 100%;
+  list-style: none;
+  padding: 0 10px; }
+
+.nav h1 {
+  display: block;
+  width: 200px;
+  position: absolute;
+  margin: 0;
+  padding: 0; }
+
+.nav {
+  float: left; }
+
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
