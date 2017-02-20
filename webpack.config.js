@@ -1,4 +1,3 @@
-"use strict"
 const path              = require('path');
 const webpack           = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -10,12 +9,11 @@ const PUBLIC     = path.resolve(__dirname, 'public')
 
 
 module.exports = {
-
   entry:{
-  javascript: `${INPUT_DIR}/app.js`,
-  html: `${INPUT_DIR}/index.html`,
-css: `${PUBLIC}/css/main.css`
-},
+    javascript: `${INPUT_DIR}/app.js`,
+    html: `${INPUT_DIR}/index.html`,
+    css: `${PUBLIC}/css/main.css`
+  },
   output: {
     path: OUTPUT_DIR,
     filename: "/[name].js",
@@ -24,12 +22,12 @@ css: `${PUBLIC}/css/main.css`
   devtool: 'eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Battleship',
+      title: 'Personal Site',
       xhtml: true,
       template: require('html-webpack-template'),
       appMountId: 'container'
     }),
-    new ExtractTextPlugin(`${PUBLIC}/css/main.css`, {
+    new ExtractTextPlugin(`${PUBLIC}/css/main.css`,{
       allChunks: true
     }),
   ],
@@ -44,7 +42,7 @@ css: `${PUBLIC}/css/main.css`
     {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-    }
+    },
     ]
   }
 }

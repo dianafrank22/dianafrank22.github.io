@@ -15,11 +15,10 @@ export default class Nav extends React.Component{
 			<header>
 			 <div className='nav'>
 			   <ul>
-				  <li><IndexLink to='/'><p> About</p></IndexLink></li>
-				  <li><IndexLink to='/work'><p>Previous Work</p></IndexLink></li>
-          <li><h1> Diana Frank Development</h1></li>
-				  <li><IndexLink to='/contact'><p>Contact</p></IndexLink></li>
-				  <li><IndexLink to='/experience'><p>Experience</p></IndexLink></li>
+				  <li><IndexLink to='/'>About</IndexLink></li>
+				  <li><IndexLink to='/work'>Previous Work</IndexLink></li>
+				  <li><IndexLink to='/contact'>Contact</IndexLink></li>
+				  <li><IndexLink to='/experience'>Experience</IndexLink></li>
 				</ul>
 			</div>
 			</header>

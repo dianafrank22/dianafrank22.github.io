@@ -2,17 +2,17 @@
   "name": "personalsite",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "NODE_ENV=production node server.js",
-    "build-css": "node-sass --include-path scss scss/style.scss public/css/main.css",
+    "start": "node server.js",
+    "build-css": "node-sass --include-path scss scss/style.scss src/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "build": "webpack -d --hot --progress --colors --watch",
+    "react": "webpack -d --hot --progress --colors --watch",
     "prod": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dianafrank22/tempPersonalSite.git"
+    "url": "https://github.com/dianafrank22/tempPersonalSite.git"
   },
   "author": "",
   "license": "ISC",
