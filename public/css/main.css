@@ -25,9 +25,12 @@
   flex-wrap: wrap; }
 
 .card {
-  width: 30vw;
-  flex-grow: 1;
-  flex-shrink: 1; }
+  width: 40vw;
+  flex-grow: 1; }
+
+.project-image {
+  width: 20vw;
+  height: inherit; }
 
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {

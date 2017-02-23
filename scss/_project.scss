@@ -6,7 +6,11 @@
 }
 
 .card{
-  width: 30vw;
+  width: 40vw;
   flex-grow: 1;
-  flex-shrink: 1;
+}
+
+.project-image{
+  width: 20vw;
+  height: inherit;  
 }

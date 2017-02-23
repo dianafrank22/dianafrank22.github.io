@@ -11,7 +11,7 @@ const PUBLIC     = path.resolve(__dirname, 'public')
 module.exports = {
   entry: `${INPUT_DIR}/app.js`,
   output: {
-    filename: "./bundle.js",
+    filename: "./build/bundle.js",
   },
   watch: true,
   devtool: 'eval-source-map',

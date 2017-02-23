@@ -9,6 +9,8 @@ export default class Projectcard extends React.Component{
     	projects: props.projects
     }
   }
+
+  // @TODO has to be better to do this
 	
   
 	render(){
@@ -18,7 +20,7 @@ export default class Projectcard extends React.Component{
 	for(let i =0;i<projects.length; i++){
 		let project = projects[i]
 		div = <div key={i} className="card">
-		<img src={'../../public/img/'+project.photo_file_name} alt={project.title}/>
+		<img className="project-image" src={'../../public/img/'+project.photo_file_name} alt={project.title}/>
 		<a href={project.website}><h3>{project.title}</h3></a>
 		<p> {project.description}</p>
 		<h4> <i> {project.skills}</i></h4>
