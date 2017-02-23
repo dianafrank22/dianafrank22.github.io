@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import ReactDOM from 'react-dom';
 
 
-export default class Footer extends React.Component{
+export default class Footer extends Component{
   constructor(){
     super();
     this.state ={}

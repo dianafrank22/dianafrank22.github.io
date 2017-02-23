@@ -17,7 +17,7 @@ const port          = process.env.PORT || 3000;
 // the requests on client side will 
 
 
-app.use(express.static(path.join(__dirname, '/dist')))
+app.use(express.static(path.join(__dirname, '/')))
 
 app.use(bodyParser.json());
 

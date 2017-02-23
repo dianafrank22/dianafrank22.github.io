@@ -17,8 +17,8 @@ export default class Projectcard extends React.Component{
 	let projects = this.props.projects
 	for(let i =0;i<projects.length; i++){
 		let project = projects[i]
-		div = <div key={i}>
-		<img src={'./img/'+project.photo_file_name} alt={project.title}/>
+		div = <div key={i} className="card">
+		<img src={'../../public/img/'+project.photo_file_name} alt={project.title}/>
 		<a href={project.website}><h3>{project.title}</h3></a>
 		<p> {project.description}</p>
 		<h4> <i> {project.skills}</i></h4>
@@ -26,7 +26,7 @@ export default class Projectcard extends React.Component{
 		eachProject.push(div)
 	}
 		return(
-		<div className='project-card'>
+		<div id='container'>
 		<h4> Projects</h4>
 		 	{eachProject}
 		</div>)

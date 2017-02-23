@@ -2,7 +2,7 @@ import React, { PropTypes, Component } from 'react';
 import ReactDOM from 'react-dom';
 
 
-export default class Contact extends React.Component{
+export default class Contact extends Component{
   constructor(){
     super();
     this.state ={}

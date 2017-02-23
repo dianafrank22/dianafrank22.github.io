@@ -1,0 +1,12 @@
+#container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 30vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+}

@@ -5,10 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build-css": "node-sass --include-path scss scss/style.scss src/main.css",
+    "build-css": "node-sass --include-path scss scss/style.scss public/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "react": "webpack -d --hot --progress --colors --watch",
-    "prod": "NODE_ENV=production node server.js"
+    "react": "webpack -d --hot --progress --colors --watch"
   },
   "repository": {
     "type": "git",
@@ -33,7 +32,8 @@
     "pg-promise": "^5.5.6",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-router": "^3.0.2"
+    "react-router": "^3.0.2",
+    "url-loader": "^0.5.7"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",

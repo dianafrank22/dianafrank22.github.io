@@ -18,6 +18,17 @@
 .nav h1 {
   font-size: 1.4em; }
 
+#container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.card {
+  width: 30vw;
+  flex-grow: 1;
+  flex-shrink: 1; }
+
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
