@@ -1,8 +1,8 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import Projectcard from './Projectcard'
 
 
-export default class Project extends React.Component{
+export default class Project extends Component{
 	constructor(){
 		super();
 		this.state={
@@ -23,7 +23,7 @@ componentDidMount(){
 	render(){
 		return(
 			<div className='projects'>
-			// check out github
+			<h2 className="text-center"> Projects</h2>
 				<Projectcard projects= {this.state.projects} />
 			</div>
 		)

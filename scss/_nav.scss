@@ -1,23 +1,42 @@
+@import 'shared';
+@import 'helpers';
+@import 'normalize';
+
 .nav ul{
-  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
   list-style: none;
-  text-align: center;
-  padding: 0;
+  height: 20vh;
+}
+
+.nav{
+  background-color: white;
   margin: 0;
 }
 
-.nav li{
+.nav-link{
   font-size: 1.3em;
   height: 40px;
   line-height: 40px;
 }
 
-.nav a{
+.nav-a{
   display: block;
   text-decoration: none;
   display: inline-block;
 }
 
+.active{
+  color: $gold;
+}
+
+
 .nav h1{
   font-size: 1.4em;
+}
+
+.nav-link h4{
+  margin: 0;
 }

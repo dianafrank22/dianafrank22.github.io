@@ -9,7 +9,7 @@ import Nav from './Nav'
 import Footer from './Footer'
 
 
-export default class Main extends React.Component{
+export default class Main extends Component{
   constructor(){
     super();
     this.state ={}

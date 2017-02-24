@@ -8,9 +8,14 @@
 .card{
   width: 40vw;
   flex-grow: 1;
+  margin: 10px;
 }
 
 .project-image{
-  width: 20vw;
+  width: 100%;
   height: inherit;  
+}
+
+.project-info a{
+  text-decoration: none;
 }

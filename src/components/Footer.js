@@ -10,8 +10,9 @@ export default class Footer extends Component{
   
 	render(){
 		return(
-			<div className='footer'>
-			<h3> Diana Frank Dev  </h3>
+			<div className='text-center footer'>
+			<h3>© 2017 Diana Frank Development  </h3>
+      <p> Links</p>
 			</div>
 		)
 	}

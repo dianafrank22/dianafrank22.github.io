@@ -10,8 +10,8 @@ export default class Contact extends Component{
   
 	render(){
 		return(
-			<div className='contact'>
-			<h3> Contact </h3>
+			<div className='contact-container'>
+			<h3 className="text-center"> Contact </h3>
 			<h4><i>Email:</i> diana.frank22@gmail.com</h4>
 			<h4><i>linkedin</i></h4>
 			<h4><i>Twitter</i></h4>

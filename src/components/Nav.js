@@ -4,7 +4,7 @@ import {Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRou
 
 
 
-export default class Nav extends React.Component{
+export default class Nav extends Component{
   constructor(){
     super();
     this.state ={}
@@ -15,10 +15,11 @@ export default class Nav extends React.Component{
 			<header>
 			 <div className='nav'>
 			   <ul>
-				  <li><IndexLink to='/'>About</IndexLink></li>
-				  <li><IndexLink to='/work'>Previous Work</IndexLink></li>
-				  <li><IndexLink to='/contact'>Contact</IndexLink></li>
-				  <li><IndexLink to='/experience'>Experience</IndexLink></li>
+				  <li className="nav-link"><IndexLink to='/' className="nav-a" activeClassName="active">About</IndexLink></li>
+				  <li className="nav-link"><IndexLink to='/work' className="nav-a" activeClassName="active">Previous Work</IndexLink></li>
+          <li className="nav-link"><h4> Diana Frank Development </h4></li>
+				  <li className="nav-link"><IndexLink to='/contact' className="nav-a" activeClassName="active">Contact</IndexLink></li>
+				  <li className="nav-link"><IndexLink to='/experience' className="nav-a" activeClassName="active">Experience</IndexLink></li>
 				</ul>
 			</div>
 			</header>
