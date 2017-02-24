@@ -23,7 +23,7 @@ componentDidMount(){
 	render(){
 		return(
 			<div className='projects'>
-			<h2 className="text-center"> Projects</h2>
+			<h2 className="text-center header"> Projects</h2>
 				<Projectcard projects= {this.state.projects} />
 			</div>
 		)

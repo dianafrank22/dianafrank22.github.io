@@ -1,10 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Barrio");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Barrio");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display");
 .footer {
-  position: absolute;
+  position: relative;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1em;
-  background-color: #efefef; }
+  background-color: #efefef;
+  margin-top: 10vh; }
 
 .border-shadow {
   border: #373737 solid 1px;
@@ -22,6 +28,12 @@
 .padding-left-right-5 {
   padding-right: 5px;
   padding-left: 5px; }
+
+.header {
+  font-family: 'Oswald', sans-serif; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
 
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -166,12 +178,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .nav-a {
   display: block;
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+  color: #373737; }
 
 .active {
-  color: #C0B283; }
+  border-bottom: #C0B283 solid 1px; }
 
-.nav h1 {
+.nav h4 {
   font-size: 1.4em; }
 
 .nav-link h4 {
@@ -186,14 +199,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .card {
   width: 40vw;
   flex-grow: 1;
-  margin: 10px; }
+  margin: 15px; }
 
 .project-image {
   width: 100%;
   height: inherit; }
 
-.project-info a {
-  text-decoration: none; }
+.project-link {
+  text-decoration: none;
+  color: black; }
 
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -318,3 +332,5 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0; }
 
 /* Box-sizing border-box */
+.main {
+  min-height: 80vh; }

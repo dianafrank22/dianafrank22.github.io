@@ -17,7 +17,7 @@ export default class Nav extends Component{
 			   <ul>
 				  <li className="nav-link"><IndexLink to='/' className="nav-a" activeClassName="active">About</IndexLink></li>
 				  <li className="nav-link"><IndexLink to='/work' className="nav-a" activeClassName="active">Previous Work</IndexLink></li>
-          <li className="nav-link"><h4> Diana Frank Development </h4></li>
+          <li className="nav-link"><h4 className="header"> Diana Frank Development </h4></li>
 				  <li className="nav-link"><IndexLink to='/contact' className="nav-a" activeClassName="active">Contact</IndexLink></li>
 				  <li className="nav-link"><IndexLink to='/experience' className="nav-a" activeClassName="active">Experience</IndexLink></li>
 				</ul>

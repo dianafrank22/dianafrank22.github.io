@@ -26,14 +26,15 @@
   display: block;
   text-decoration: none;
   display: inline-block;
+  color: $charcoal;
 }
 
 .active{
-  color: $gold;
+  border-bottom: $gold solid 1px;
 }
 
 
-.nav h1{
+.nav h4{
   font-size: 1.4em;
 }
 

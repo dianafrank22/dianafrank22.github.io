@@ -8,7 +8,7 @@
 .card{
   width: 40vw;
   flex-grow: 1;
-  margin: 10px;
+  margin: 15px;
 }
 
 .project-image{
@@ -16,6 +16,7 @@
   height: inherit;  
 }
 
-.project-info a{
+.project-link {
   text-decoration: none;
+  color: black;
 }

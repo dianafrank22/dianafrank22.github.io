@@ -19,14 +19,16 @@ export default class Projectcard extends Component{
 	let projects = this.props.projects
 	for(let i =0;i<projects.length; i++){
 		let project = projects[i]
-		  div = <div key={i} className="border-shadow card">
+		  div =<a key={i} className="project-link" href={project.website}> 
+      <div className="border-shadow card">
 		    <img className="project-image" src={'../../public/img/'+project.photo_file_name} alt={project.title}/>
           <div className="padding-left-right-5 project-info">
-		        <a href={project.website}><h3 className="text-center">{project.title}</h3></a>
+		        <h3 className="text-center header">{project.title}</h3>
 		        <p> {project.description}</p>
 		        <h4> <i> {project.skills}</i></h4>
           </div>
-		  </div>
+      </div>
+    </a>
 		eachProject.push(div)
 	}
 		return(

@@ -11,9 +11,7 @@ export default class Experience extends Component{
 	render(){
 		return(
 		<div className='experience'>
-    <h2> Experience </h2>
-    <h5>See projects <i> here </i></h5>
-
+    <h2 className="header text-center"> Experience </h2>
        <h3>Work</h3>
          <h4>Komeeda <b>February 2017 - Present</b></h4> 
          <p> <b> Position</b> description</p>

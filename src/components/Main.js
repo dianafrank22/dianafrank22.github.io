@@ -31,8 +31,10 @@ export default class Main extends Component{
 
 }
 	const Container = (props) =>
+	<div>
 	<div className='main'>
 		<Nav/>
 		{props.children}
+	</div>
 		<Footer/>
 	</div>
