@@ -10,18 +10,30 @@ export default class About extends Component{
   
 	render(){
 		return(
-			<div className='about'>
-			<h3 className="header text-center"> About </h3>
-			<p> about me</p>
-			// image
-			name, age, education, new york, new orleans
-			<p> what i've done </p>
-			worked as a fullstack developer for almost a year now. Attended General Assmebly WDI from december - march. Got a job as a fullstack developer in april 2016 at a small startup. I worked there building
-			an AI chatbot, and the frontend for user authentication. Since my departure in october, i have been building my own projects and working part time as a developer at a smallstartup Komeeda, working with rails. 
-			worked with react, node, express, see more of my work here, see more about my experiences here
-			<p> when i'm not coding </p>
-			hanging with my dogs, traveling, enjoy making travel videos, cooking, reading a crime thriller, searching for the best moscow mule in manhattan,  
-			</div>
+    <div>
+    	<div className='about'>
+            <div id="img" className="row">
+                <img src="public/img/me3.png" className="me"/>
+            </div>
+            <div className="info">
+                <h2 className="header about-h2"> Hello !</h2>
+    			<p> I'm <strong className="pink two-em">Diana Frank</strong>, a <strong className="blue two-em"> fullstack developer</strong> from  
+                <strong className="pink two-em"> New York, NY </strong>. <br/> 
+                I enjoy building beautiful, responsive, testdriven frontends and backends of websites. </p>
+            </div>
+        </div>
+      <div className='list-div'>
+        <div className="row">
+            <h2> When I'm not coding, you can find me... </h2>
+            <p className="list margin-left-2 hover-blue">hanging with my two dogs.............................</p>
+            <p className="list margin-right-2 hover-pink">...........................................traveling</p>
+            <p className="list margin-left-2 hover-blue">searching Manhattan for the best Moscow Mule.........</p>
+            <p className="list margin-right-2 hover-pink">................................making travel videos</p> 
+            <p className="list margin-left-2 hover-blue">cooking..............................................</p>
+            <p className="list margin-right-2 hover-pink">............................reading a crime thriller</p>
+        </div>
+      </div>
+    </div>
 		)
 	}
 

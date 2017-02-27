@@ -8,7 +8,7 @@
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  height: 20vh;
+  margin-bottom: 5%;
 }
 
 .nav{
@@ -29,8 +29,12 @@
   color: $charcoal;
 }
 
+.nav-a:hover{
+  color: $blue;
+}
+
 .active{
-  border-bottom: $gold solid 1px;
+  border-bottom: $pink solid 1px;
 }
 
 
@@ -40,4 +44,10 @@
 
 .nav-link h4{
   margin: 0;
+}
+
+.logo{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
 }

@@ -2,13 +2,58 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald");
 @import url("https://fonts.googleapis.com/css?family=Barrio");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Barrio");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Oswald");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display");
+.two-em {
+  font-size: 1.23em; }
+
+.hover-blue:hover {
+  color: #1856F9; }
+
+.hover-pink:hover {
+  color: #C71585; }
+
+.list {
+  font-size: 1.2em;
+  line-height: 1em; }
+
+div.about {
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 80%; }
+
+.about {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.info {
+  width: 33%; }
+
+.info h2 {
+  margin-top: 40%;
+  font-size: 3em; }
+
+.list-div {
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+.margin-left-2 {
+  margin-left: 10%; }
+
+.margin-right-2 {
+  text-align: right;
+  margin-right: 20%; }
+
 .footer {
   position: relative;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 1em;
+  padding: .6em;
   background-color: #efefef;
   margin-top: 10vh; }
 
@@ -34,6 +79,12 @@
 
 body {
   font-family: 'Open Sans', sans-serif; }
+
+.pink {
+  color: #C71585; }
+
+.blue {
+  color: #1856F9; }
 
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -164,7 +215,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  height: 20vh; }
+  margin-bottom: 5%; }
 
 .nav {
   background-color: white;
@@ -181,14 +232,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   display: inline-block;
   color: #373737; }
 
+.nav-a:hover {
+  color: #1856F9; }
+
 .active {
-  border-bottom: #C0B283 solid 1px; }
+  border-bottom: #C71585 solid 1px; }
 
 .nav h4 {
   font-size: 1.4em; }
 
 .nav-link h4 {
   margin: 0; }
+
+.logo {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%); }
 
 #container {
   display: flex;

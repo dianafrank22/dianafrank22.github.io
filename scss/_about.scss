@@ -1,0 +1,56 @@
+@import 'shared';
+
+.two-em{
+  font-size: 1.23em;
+}
+
+.hover-blue:hover{
+  color: $blue;
+}
+
+.hover-pink:hover{
+  color: $pink;
+}
+
+.list{
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+
+div.about{
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 80%;
+}
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.info{
+  width:  33%;
+}
+
+.info h2{
+  margin-top: 40%;
+  font-size: 3em;
+}
+
+.list-div{
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.margin-left-2{
+  margin-left: 10%;
+}
+
+.margin-right-2{
+  text-align: right;
+  margin-right: 20%;
+}
