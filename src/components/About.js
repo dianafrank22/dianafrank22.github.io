@@ -16,7 +16,7 @@ export default class About extends Component{
                 <img src="public/img/me3.png" className="me"/>
             </div>
             <div className="info">
-                <h2 className="header about-h2"> Hello !</h2>
+                <h2 className="header"> Hello !</h2>
     			<p> I'm <strong className="pink two-em">Diana Frank</strong>, a <strong className="blue two-em"> fullstack developer</strong> from  
                 <strong className="pink two-em"> New York, NY </strong>. <br/> 
                 I enjoy building beautiful, responsive, testdriven frontends and backends of websites. </p>
