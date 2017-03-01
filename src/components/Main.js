@@ -32,7 +32,7 @@ export default class Main extends Component{
 }
 	const Container = (props) =>
 	<div>
-	<div className='main'>
+	<div className='main center'>
 		<Nav/>
 		{props.children}
 	</div>

@@ -2,11 +2,6 @@
 @import 'shared';
 
 
-// text-center
-// borders
-// margin
-// padding
-
 .border-shadow{
   border: $charcoal solid 1px;
   box-shadow: 0 3px 2px $charcoal;
@@ -19,14 +14,8 @@
 // text
 .text-black {color: $charcoal};
 
-
-
 // positioning
 .text-center {text-align: center};
-
-.bg-gray{
-
-}
 
 .padding-5{
   padding: 5px;
@@ -51,4 +40,9 @@ body{
 
 .blue{
   color: $blue;
+}
+
+.center{
+  margin-left: 50%;
+  transform: translate(-50%);
 }

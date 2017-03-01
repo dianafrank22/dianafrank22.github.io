@@ -1,23 +1,41 @@
-#container{
+.project-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.card{
-  width: 40vw;
-  flex-grow: 1;
-  margin: 15px;
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90vh;
+  margin-bottom: 5vh;
+}
+
+div.project-container div:nth-of-type(odd){
+  flex-direction:row;
+}
+
+div.project-container div:nth-of-type(even){
+  flex-direction:row-reverse;
 }
 
 .project-image{
-  width: 100%;
-  height: inherit;  
+    width: auto;
+    height: 75vh;
+    max-height: 75vh;
+    border: white solid 15px;
 }
 
 .project-link {
   text-decoration: none;
   color: black;
+}
+
+.project-info{
+  width: 25vw;
 }
 

@@ -86,6 +86,10 @@ body {
 .blue {
   color: #1856F9; }
 
+.center {
+  margin-left: 50%;
+  transform: translate(-50%); }
+
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -249,24 +253,39 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   left: 50%;
   transform: translate(-50%); }
 
-#container {
+.project-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex-direction: column; }
 
-.card {
-  width: 40vw;
-  flex-grow: 1;
-  margin: 15px; }
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90vh;
+  margin-bottom: 5vh; }
+
+div.project-container div:nth-of-type(odd) {
+  flex-direction: row; }
+
+div.project-container div:nth-of-type(even) {
+  flex-direction: row-reverse; }
 
 .project-image {
-  width: 100%;
-  height: inherit; }
+  width: auto;
+  height: 75vh;
+  max-height: 75vh;
+  border: white solid 15px; }
 
 .project-link {
   text-decoration: none;
   color: black; }
+
+.project-info {
+  width: 25vw; }
 
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -393,3 +412,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 /* Box-sizing border-box */
 .main {
   min-height: 80vh; }
+
+body {
+  background-color: #ffffff; }
+
+.main {
+  background-color: #ebebeb;
+  width: 94vw; }
