@@ -67,6 +67,9 @@ div.about {
   background: #ebebeb;
   width: 80%; }
 
+div.experience h2 {
+  color: #C71585; }
+
 .footer {
   position: relative;
   right: 0;
