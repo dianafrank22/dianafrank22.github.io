@@ -453,3 +453,7 @@ body {
 .main {
   background-color: #ffffff;
   width: 94vw; }
+
+a {
+  text-decoration: none;
+  color: #373737; }
