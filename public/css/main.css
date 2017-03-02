@@ -48,18 +48,21 @@ div.about {
   text-align: right;
   margin-right: 20%; }
 
+.me {
+  height: 60vh;
+  width: auto; }
+
 .footer {
   position: relative;
   right: 0;
   bottom: 0;
   left: 0;
   padding: .6em;
-  background-color: #efefef;
-  margin-top: 10vh; }
+  background-color: #ebebeb;
+  margin-top: 5vh; }
 
 .border-shadow {
-  border: #373737 solid 1px;
-  box-shadow: 0 3px 2px #373737; }
+  box-shadow: 0 20px 30px #373737; }
 
 .text-black {
   color: #373737; }
@@ -222,7 +225,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   margin-bottom: 5%; }
 
 .nav {
-  background-color: white;
+  background-color: #ffffff;
   margin: 0; }
 
 .nav-link {
@@ -253,6 +256,17 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   left: 50%;
   transform: translate(-50%); }
 
+header {
+  background-color: #ffffff; }
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 90vh;
+  margin-bottom: 5em; }
+
 .project-container {
   display: flex;
   justify-content: space-around;
@@ -265,7 +279,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 90vh;
+  min-height: 90vh;
   margin-bottom: 5vh; }
 
 div.project-container div:nth-of-type(odd) {
@@ -275,17 +289,37 @@ div.project-container div:nth-of-type(even) {
   flex-direction: row-reverse; }
 
 .project-image {
-  width: auto;
-  height: 75vh;
-  max-height: 75vh;
-  border: white solid 15px; }
+  width: 50vw;
+  height: inherit;
+  max-width: 50vw;
+  border: white solid 15px;
+  flex-grow: 3;
+  margin-bottom: 5em; }
 
 .project-link {
   text-decoration: none;
   color: black; }
 
 .project-info {
-  width: 25vw; }
+  width: 25vw;
+  margin: 2em;
+  flex-grow: 1; }
+
+.project-title {
+  color: #C71585;
+  font-size: 2em; }
+
+.project-btn {
+  width: 15vw;
+  height: 7vh;
+  background-color: #C71585;
+  color: white; }
+
+.project-description {
+  font-size: 1.2em; }
+
+.project-btn:hover {
+  color: #1856F9; }
 
 /* CSS Normalize */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -414,8 +448,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   min-height: 80vh; }
 
 body {
-  background-color: #ffffff; }
+  background-color: #ebebeb; }
 
 .main {
-  background-color: #ebebeb;
+  background-color: #ffffff;
   width: 94vw; }
