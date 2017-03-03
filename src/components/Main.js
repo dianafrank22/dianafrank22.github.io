@@ -6,9 +6,10 @@ import Notfound from './NotFound'
 import Contact from './Contact'
 import Experience from './Experience'
 import Nav from './Nav'
+import Footer from './Footer'
 
 
-export default class Main extends React.Component{
+export default class Main extends Component{
   constructor(){
     super();
     this.state ={}
@@ -19,7 +20,7 @@ export default class Main extends React.Component{
 			<Router history={hashHistory}>
 				<Route path='/' component={Container}>
 				<IndexRoute component={About}/>
-				<Route path='/projects' component={Project}/>
+				<Route path='/work' component={Project}/>
 				<Route path='/contact' component={Contact}/>
 				<Route path='/experience' component={Experience}/>
 				<Route path='*' component={Notfound}/>
@@ -31,6 +32,9 @@ export default class Main extends React.Component{
 }
 	const Container = (props) =>
 	<div>
+	<div className='main center'>
 		<Nav/>
 		{props.children}
+	</div>
+		<Footer/>
 	</div>

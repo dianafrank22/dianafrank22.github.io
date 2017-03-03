@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import {Router, Route, Link, IndexRoute, hashHistory, browserHistory, DefaultRoute, IndexLink} from 'react-router'
 
 
-export default class Nav extends React.Component{
+
+export default class Nav extends Component{
   constructor(){
     super();
     this.state ={}
@@ -11,12 +12,17 @@ export default class Nav extends React.Component{
   
 	render(){
 		return(
-			<div>
-				<IndexLink to='/'> About</IndexLink>
-				<IndexLink to='/projects'>Projects</IndexLink>
-				<IndexLink to='/contact'>Contact</IndexLink>
-				<IndexLink to='/experience'>Experience</IndexLink>
+			<header>
+      <img src="public/img/logo.png" className="logo"/>
+			 <div className='nav'>
+			   <ul>
+				  <li className="nav-link"><IndexLink to='/' className="nav-a" activeClassName="active">About</IndexLink></li>
+				  <li className="nav-link"><IndexLink to='/work' className="nav-a" activeClassName="active">Previous Work</IndexLink></li>
+				  <li className="nav-link"><IndexLink to='/contact' className="nav-a" activeClassName="active">Contact</IndexLink></li>
+				  <li className="nav-link"><IndexLink to='/experience' className="nav-a" activeClassName="active">Experience</IndexLink></li>
+				</ul>
 			</div>
+			</header>
 		)
 	}
 

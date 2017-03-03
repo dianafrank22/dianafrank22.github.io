@@ -1,34 +1,15 @@
-import React, { PropTypes, Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react';
 
-export default class Projectcard extends React.Component{
-  constructor(props){
-    super(props);
-    this.state ={
-    	projects: props.projects
-    }
-  }
-	
-  
-	render(){
-	let div ="";
-	let eachProject = [];
-	let projects = this.props.projects
-	for(let i =0;i<projects.length; i++){
-		let project = projects[i]
-		div = <div key={i}>
-		<img src={'./img/'+project.photo_file_name} alt={project.title}/>
-		<a href={project.website}><h3>{project.title}</h3></a>
-		<p> {project.description}</p>
-		<h4> <i> {project.skills}</i></h4>
-		</div>
-		eachProject.push(div)
-	}
-		return(
-		<div className="projectcard">
-		<h4> Projects</h4>
-		 	{eachProject}
-		</div>)
-	}
+const Projectcard= props =>(
+    <div className="card-container padding-5">
+        <img className="project-image border-shadow" src={'../../public/img/'+props.photo} alt={props.title}/>
+      <div className="project-info text-center"> 
+          <h2 className="project-title header">{props.title}</h2>
+          <p className="project-description"> {props.description}</p>
+          <h4> <i> {props.skills}</i></h4>
+         <a className="project-link" href={props.website}> <button className="project-btn shadow-thin">Check it out </button></a> 
+      </div>
+    </div>
+  )
 
-}
+export default Projectcard;

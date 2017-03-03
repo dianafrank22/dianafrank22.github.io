@@ -1,0 +1,57 @@
+@import 'shared';
+@import 'helpers';
+@import 'normalize';
+
+.nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 5%;
+}
+
+.nav{
+  background-color: $white;
+  margin: 0;
+}
+
+.nav-link{
+  font-size: 1.3em;
+  height: 40px;
+  line-height: 40px;
+}
+
+.nav-a{
+  display: block;
+  text-decoration: none;
+  display: inline-block;
+  color: $charcoal;
+}
+
+.nav-a:hover{
+  color: $blue;
+}
+
+.active{
+  border-bottom: $pink solid 1px;
+}
+
+
+.nav h4{
+  font-size: 1.4em;
+}
+
+.nav-link h4{
+  margin: 0;
+}
+
+.logo{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+header{
+  background-color: $white;
+}

@@ -1,7 +1,8 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Notfound extends React.Component{
+
+export default class Notfound extends Component{
   constructor(){
     super();
     this.state ={}
@@ -9,7 +10,8 @@ export default class Notfound extends React.Component{
   
 	render(){
 		return(
-			<h3> Not Found  <b> SAD!</b></h3>		)
+			<div className='no-style center'>
+			</div>	)
 	}
 
 }
