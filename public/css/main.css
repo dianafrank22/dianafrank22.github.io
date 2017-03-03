@@ -29,7 +29,8 @@ div.about {
   flex-wrap: wrap; }
 
 .info {
-  width: 33%; }
+  width: 22vw;
+  margin-left: 2em; }
 
 .info h2 {
   margin-top: 40%;
@@ -49,8 +50,13 @@ div.about {
   margin-right: 20%; }
 
 .me {
-  height: 60vh;
-  width: auto; }
+  height: auto;
+  width: 50vw; }
+
+.not-coding {
+  width: 90%;
+  margin-top: 2em;
+  margin-bottom: 2em; }
 
 .experience {
   padding-bottom: 2em; }

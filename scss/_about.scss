@@ -31,7 +31,8 @@ div.about{
 }
 
 .info{
-  width:  33%;
+  width: 22vw;
+  margin-left: 2em; 
 }
 
 .info h2{
@@ -56,6 +57,12 @@ div.about{
 }
 
 .me{
-  height: 60vh;
-  width: auto;
+  height: auto;
+  width: 50vw;
+}
+
+.not-coding{
+  width: 90%;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
