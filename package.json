@@ -4,10 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "build-css": "node-sass --include-path scss scss/style.scss public/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "react": "webpack -d --hot --progress --colors --watch"
+    "react": "webpack -d --hot --progress --colors --watch",
+    "prod": "NODE_ENV=production node server.js"
   },
   "repository": {
     "type": "git",
