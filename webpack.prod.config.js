@@ -9,9 +9,9 @@ module.exports = {
   ],
 
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/public/'
+    publicPath: '/build/'
   },
 
   plugins: [
