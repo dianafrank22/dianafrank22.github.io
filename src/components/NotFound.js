@@ -10,8 +10,7 @@ export default class Notfound extends Component{
   
 	render(){
 		return(
-			<div class='no-style'>
-			<h3> Not Found  <b> SAD!</b></h3>	
+			<div className='no-style center'>
 			</div>	)
 	}
 

@@ -277,6 +277,15 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header {
   background-color: #ffffff; }
 
+.no-style {
+  background: url(https://media.giphy.com/media/VhJjZ8Yt3WqbK/source.gif) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 80vh;
+  width: 80vw; }
+
 #container {
   display: flex;
   justify-content: center;
