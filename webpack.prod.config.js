@@ -21,7 +21,7 @@ module.exports = {
       template: require('html-webpack-template'),
       appMountId: 'main'
     }),
-    new ExtractTextPlugin('[name]-[hash].min.css'),
+    new ExtractTextPlugin('[name].css'),
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
         warnings: false,
