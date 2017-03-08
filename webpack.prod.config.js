@@ -1,34 +1,37 @@
-const path    = require('path')
-const webpack = require('webpack')
+const path    = require('path');
+const webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   devtool: 'source-map',
-
   entry: [
-    './src/app'
+    path.join(__dirname, 'src/app.js')
   ],
-
   output: {
-    path: path.join(__dirname, 'build'),
+    path: path.join(__dirname, '/build/'),
     filename: 'bundle.js',
-    publicPath: '/build/'
+    publicPath: '/'
   },
-
   plugins: [
-    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Diana Frank Development',
+      xhtml: true,
+      template: require('html-webpack-template'),
+      appMountId: 'main'
+    }),
+    new ExtractTextPlugin('[name]-[hash].min.css'),
     new webpack.optimize.UglifyJsPlugin({
-      minimize: true,
-      compress: {
-        warnings: false
+      compressor: {
+        warnings: false,
+        screw_ie8: true
       }
     }),
     new webpack.DefinePlugin({
-      'process.env': {
-        'NODE_ENV': JSON.stringify('production')
-      }
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ],
-
   module: {
     loaders: [
       { test: /\.js?$/,
