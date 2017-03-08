@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Projectcard from './Projectcard'
+import Projectcard from './ProjectCard'
 
 
 const ProjectContainer = props =>{
