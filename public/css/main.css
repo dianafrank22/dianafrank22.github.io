@@ -349,12 +349,12 @@ div.project-container div:nth-of-type(even) {
   color: white; }
 
 .project-description {
-  font-size: 1.2em; }
+  font-size: 1em; }
 
 .project-btn:hover {
   color: #1856F9; }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1000px) {
   div.project-container div:nth-of-type(odd),
   div.project-container div:nth-of-type(even) {
     flex-direction: column; }
